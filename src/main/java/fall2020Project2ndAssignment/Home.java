@@ -49,7 +49,8 @@ public Home(String details, String values) {
 	this.place=de[2];
 	this.pets = de[3].equalsIgnoreCase("yes");
 	this.amenties = new String [de.length-4];
-	for(int i=0;i<de.length-4;i++) this.amenties[i]= de[i+4] ; 
+	for(int i=0;i<de.length-4;i++) this.amenties[i]= de[i+4] ;
+	
 	
 }
 }
