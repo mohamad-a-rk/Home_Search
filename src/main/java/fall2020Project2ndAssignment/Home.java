@@ -50,7 +50,12 @@ public Home(String details, String values) {
 	this.pets = de[3].equalsIgnoreCase("yes");
 	this.amenties = new String [de.length-4];
 	for(int i=0;i<de.length-4;i++) this.amenties[i]= de[i+4] ;
-	
-	
-}
+	int val [] = new int [va.length];
+	for(int i=0;i<val.length;i++) val[i]=Integer.parseInt(va[i]);
+	this.price= val[0];
+	this.area = val[1];
+	this.bedroomCount=val[2];
+	this.bathroomCount =val[3];
+	this.leaseLength=val[4];
+	}
 }
