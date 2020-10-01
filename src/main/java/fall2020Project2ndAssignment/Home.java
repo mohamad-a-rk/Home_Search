@@ -58,4 +58,19 @@ public Home(String details, String values) {
 	this.bathroomCount =val[3];
 	this.leaseLength=val[4];
 	}
+@Override
+public String toString() {
+	String a ="";
+	a= a+"Home"+" ["+"area="+this.area+" ,price="+this.price+" ,no_of_bedrooms="+this.bedroomCount+" ,lease_length="+this.leaseLength+"]";
+	
+	return a;
+}
+public boolean equals(Home h) {
+	
+	return ((this.pets==h.isPetsAllowed())&&(this.area==h.getArea())&&(this.bathroomCount==h.getBathroomCount())&&
+			(this.bedroomCount==h.getBedroomCount())&&(this.leaseLength==h.getLeaseLength())&&
+			(this.material.equals(h.getMaterial()))&&(this.place.equals(h.getPlace()))&&(this.price==h.getPrice())&&
+			(this.type.equals(h.getType())));
+	} 
+
 }
