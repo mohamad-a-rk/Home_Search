@@ -42,15 +42,11 @@ public class SearchHomeSteps {
 		}
 		@When("I search about home with price less than {int}")
 		public void iSearchAboutHomeWithPriceLessThan(Integer int1) {
-		 res=s.PriceOfHome(houses, int1);
-		 shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
+		 res=s.RangePriceOfHome(houses,0, int1);
+		 shouldRes.clear();
 		 shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 			
-		}
-		@Then("A list of homes that matches the price specification should be returned and printed on the console")
-		public void aListOfHomesThatMatchesThePriceSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-		  
-		}        
+		}       
 
 @When("I search about home with {int} bed rooms")
 public void iSearchAboutHomeWithBedRooms(Integer int1) {
@@ -73,20 +69,19 @@ public void iSearchAboutHomeWithBathrooms(Integer int1) {
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	
    }
-///Placement
-@When("I search about home by {String}")  
-public void iSearchAboutHomeWithPlacement (String string1) {
-	res=s.PlacementOfHome(houses, string1);
+
+@When("I search about home by place {string}")
+public void iSearchAboutHomeByPlace(String string) {
+	res=s.PlacementOfHome(houses, string);
+	shouldRes.clear();
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
-	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 }
 
-//////Material 
-@When("I search about home by {String}")  
-public void iSearchAboutHomeWithMaterial (String string1) {
-	res=s.MaterialHome(houses, string1);
+@When("I search about home by material {string}")
+public void iSearchAboutHomeByMaterial(String string) {
+	res=s.MaterialHome(houses, string);
+	shouldRes.clear();
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
-	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 }
 
 
@@ -95,35 +90,32 @@ public void iSearchAboutHomeWithMaterial (String string1) {
 @When("I search about home with price range {int} to {int}")  
 public void iSearchAboutHomeWithPriceRange (Integer int1,Integer int2) {
 	res=s.RangePriceOfHome(houses, int1, int2);
+	shouldRes.clear();
+	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	
 }
-/////area        
-@When(" I search about home with area {float}")  
-public void iSearchAboutHomeWithArea (Float float1) {
-	res=s.ArreaOfHome(houses,float1);
+@When("I search about home with area  {int}")
+public void iSearchAboutHomeWithArea(Integer int1) {
+	res=s.AreaOfHome(houses, 0,int1);
+	shouldRes.clear();
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
-	
 }
-
 
 ////area range  
 @When("I search about home with area range {int} to {int}")  
 public void iSearchAboutHomeWithAreaRange (Integer int1,Integer int2) {
-	
+	res=s.AreaOfHome(houses, int1,int2);
+	shouldRes.clear();
+	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
+
 }
 
 @When("I search about home that allows pets")
 public void iSearchAboutHomeThatAllowsPets() {
 	res = s.allowsPets(houses); 
 }
-//type
-@When("I search about home by {String}")
-public void iSearchAboutHomeBy(String string1) {
-	res =s.typeHome(houses, string1);
-	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
-	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
-}
+
 @When("I search about home with {int} months of lease")
 public void iSearchAboutHomeWithMonthsOfLease(Integer int1) {
 	res = s.canRentFor(houses,int1);
@@ -134,12 +126,16 @@ public void iSearchAboutHomeWithMonthsOfLease(Integer int1) {
 @When("I search about home that has an {string}")
 public void iSearchAboutHomeThatHasAn(String string) {
     res = s.doesIthas(houses, string);
-    System.out.print(1);
-    s.printRes(res);
     shouldRes.clear();
-    System.out.print(2);
     shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
-    s.printRes(shouldRes);
-}}
+}
 
+
+
+@When("I search about home by type {string}")
+public void iSearchAboutHomeByType(String string) {
+    res = s.typeHome(houses, string);
+    shouldRes.clear();
+    shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
+}}
 

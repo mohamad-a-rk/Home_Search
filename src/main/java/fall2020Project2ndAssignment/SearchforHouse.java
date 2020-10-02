@@ -38,8 +38,7 @@ public class SearchforHouse {
 		y = false ;
 		for(String s:e.getAmenties()) {
 			if(s.equalsIgnoreCase(b)) { y=true;
-			break;}
-		}
+			break;}}
 		if(y) res.add(e) ;
 	}
 	return res;
@@ -60,35 +59,34 @@ public ArrayList<Home> PriceOfHome(ArrayList <Home> a,int x){
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
 		if(e.getPrice()==x) res.add(e) ;
-	
 	}
 	return res;
 }
 public ArrayList<Home> typeHome(ArrayList <Home> a,String c){
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
-		if(e.getType()==c) res.add(e) ;
+		if(e.getType().equalsIgnoreCase(c)) res.add(e) ;
 	}
 	return res;
 }
 public ArrayList<Home> PlacementOfHome(ArrayList <Home> a,String c){
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
-		if(e.getPlace()==c) res.add(e) ;
+		if(e.getPlace().equalsIgnoreCase(c)) res.add(e) ;
 	}
 	return res;
 }
 public ArrayList<Home> MaterialHome(ArrayList <Home> a,String c){
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
-		if(e.getMaterial()==c) res.add(e) ;
+		if(e.getMaterial().equalsIgnoreCase(c)) res.add(e) ;
 	}
 	return res;
 }
-public ArrayList<Home> ArreaOfHome(ArrayList <Home> a,float d){
+public ArrayList<Home> AreaOfHome(ArrayList <Home> a,float d,float c){
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
-		if(e.getArea()==d) res.add(e) ;
+		if(e.getArea()>=d&&e.getArea()<c) res.add(e) ;
 	}
 	return res;
 }

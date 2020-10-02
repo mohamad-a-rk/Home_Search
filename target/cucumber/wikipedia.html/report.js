@@ -24,6 +24,50 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
+  "name": "Search home by type",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about home by type \"HOUSE\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeByType(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "Search about home with less than a specific price",
   "description": "",
   "keyword": "Scenario"
@@ -34,6 +78,226 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeWithPriceLessThan(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search home by Placement",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about home by place \"VILLAGE\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeByPlace(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search home by Material",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about home by material \"WOOD\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeByMaterial(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search home with Price_Month",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about home with price range 500 to 700",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeWithPriceRange(java.lang.Integer,java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search home with less than a specific Area",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about home with area  160",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeWithArea(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search home with range_area",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about home with area range 150 to 200",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeWithAreaRange(java.lang.Integer,java.lang.Integer)"
 });
 formatter.result({
   "status": "passed"
@@ -249,7 +513,7 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I search about home that has an \"fireplase\"",
+  "name": "I search about home that has an \"FIREPLACE\"",
   "keyword": "When "
 });
 formatter.match({
@@ -266,7 +530,6 @@ formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted(SearchHomeSteps.java:60)\r\n\tat ✽.A List of homes that matches the specification should be printed(file:///C:/Users/hp/eclipse-workspace/fall2020Project2ndAssignment/use_cases/Search.feature:30)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 });
