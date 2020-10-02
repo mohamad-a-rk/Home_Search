@@ -54,6 +54,7 @@ public  void printRes(ArrayList <Home> a) {
 	for(Home q:a) {
 		System.out.println(a);
 	}
+	if(a.size()==0) System.out.println("Sorry but there is no results matches");
 }
 public ArrayList<Home> PriceOfHome(ArrayList <Home> a,int x){
 	ArrayList <Home> res = new ArrayList<Home>(); 
