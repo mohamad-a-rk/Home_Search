@@ -6,13 +6,34 @@ Given  these homes are contained in the system
                 |APARTMENT_BRICK_CITY_NO_ELEVATOR|230_120_4_2_12|
                
                
-  Scenario Outline: Search home by type
-  When I search about home by ""HOUSE
+  Scenario: Search home by type
+  When I search about home by "HOUSE"
   Then A list of homes that matches the  type specification should be returned and printed on the console
 
     Scenario: Search about home with less than a specific price
     When I search about home with price less than 400 
     Then A List of homes that matches the specification should be printed
+       
+  Scenario: Search home by Placement
+    When I search about home by "VILLAGE"
+    Then A list of homes that matches the Placement specification should be returned and printed on the console
+    
+ 
+  Scenario: Search home by Material
+    When I search about home by "STONE"
+    Then A list of homes that matches the Material specification should be returned and printed on the console  
+    
+  Scenario: Search home with Price_Month
+    When I search about home with price range 500 to 700
+    Then A list of homes that matches the Price_Month specification should be returned and printed on the console  
+    
+  Scenario: Search home with less than a specific Area
+    When I search about home with area  160
+    Then A list of homes that matches the Area specification should be returned and printed on the console    
+      
+   Scenario: Search home with range_area
+    When I search about home with area range 150 to 200
+    Then A list of homes that matches the range_area specification should be returned and printed on the console   
     Scenario: Search about home with specfic number of bed rooms
     When I search about home with 3 bed rooms
     Then A List of homes that matches the specification should be printed
