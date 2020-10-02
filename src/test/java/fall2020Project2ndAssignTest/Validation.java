@@ -10,7 +10,7 @@ monochrome = true,
 snippets=SnippetType.CAMELCASE,
 glue= {"fall2020Project2ndAssignTest"},
 strict=true
-)
+) 
 
 public class Validation {
 
