@@ -75,7 +75,7 @@ public ArrayList<Home> ArreaOfHome(ArrayList <Home> a,float d){
 public ArrayList<Home> RangePriceOfHome(ArrayList <Home> a,int x,int y){
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
-		if(e) res.add(e) ;
+//		if(e) res.add(e) ;
 	
 	}
 	return res;
