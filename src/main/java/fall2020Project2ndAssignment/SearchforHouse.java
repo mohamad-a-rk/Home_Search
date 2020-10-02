@@ -36,4 +36,49 @@ public  void printRes(ArrayList <Home> a) {
 		System.out.println(a);
 	}
 }
+public ArrayList<Home> PriceOfHome(ArrayList <Home> a,int x){
+	ArrayList <Home> res = new ArrayList<Home>(); 
+	for(Home e:a) {
+		if(e.getPrice()==x) res.add(e) ;
+	
+	}
+	return res;
+}
+public ArrayList<Home> typeHome(ArrayList <Home> a,String c){
+	ArrayList <Home> res = new ArrayList<Home>(); 
+	for(Home e:a) {
+		if(e.getType()==c) res.add(e) ;
+	}
+	return res;
+}
+public ArrayList<Home> PlacementOfHome(ArrayList <Home> a,String c){
+	ArrayList <Home> res = new ArrayList<Home>(); 
+	for(Home e:a) {
+		if(e.getPlace()==c) res.add(e) ;
+	}
+	return res;
+}
+public ArrayList<Home> MaterialHome(ArrayList <Home> a,String c){
+	ArrayList <Home> res = new ArrayList<Home>(); 
+	for(Home e:a) {
+		if(e.getMaterial()==c) res.add(e) ;
+	}
+	return res;
+}
+public ArrayList<Home> ArreaOfHome(ArrayList <Home> a,float d){
+	ArrayList <Home> res = new ArrayList<Home>(); 
+	for(Home e:a) {
+		if(e.getArea()==d) res.add(e) ;
+	}
+	return res;
+}
+public ArrayList<Home> RangePriceOfHome(ArrayList <Home> a,int x,int y){
+	ArrayList <Home> res = new ArrayList<Home>(); 
+	for(Home e:a) {
+		if(e) res.add(e) ;
+	
+	}
+	return res;
+}
+
 }
