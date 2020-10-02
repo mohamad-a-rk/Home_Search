@@ -92,7 +92,6 @@ public void iSearchAboutHomeWithPriceRange (Integer int1,Integer int2) {
 	res=s.RangePriceOfHome(houses, int1, int2);
 	
 }
-
 /////area        
 @When(" I search about home with area {float}")  
 public void iSearchAboutHomeWithArea (Float float1) {
