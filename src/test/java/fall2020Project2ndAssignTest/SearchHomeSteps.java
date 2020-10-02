@@ -117,6 +117,13 @@ public void iSearchAboutHomeWithAreaRange (Integer int1,Integer int2) {
 public void iSearchAboutHomeThatAllowsPets() {
 	res = s.allowsPets(houses); 
 }
+//type
+@When("I search about home by {String}")
+public void iSearchAboutHomeBy(String string1) {
+	res =s.typeHome(houses, string1);
+	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
+	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
+}
 @When("I search about home with {int} months of lease")
 public void iSearchAboutHomeWithMonthsOfLease(Integer int1) {
 	res = s.canRentFor(houses,int1);
