@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 
 import fall2020Project2ndAssignment.Home;
 import fall2020Project2ndAssignment.SearchforHouse;
@@ -39,7 +40,6 @@ public class SearchHomeSteps {
 		   }
 		   
 		}
-
 		@When("I search about home with price less than {int}")
 		public void iSearchAboutHomeWithPriceLessThan(Integer int1) {
 		
@@ -47,40 +47,48 @@ public class SearchHomeSteps {
 		@Then("A list of homes that matches the price specification should be returned and printed on the console")
 		public void aListOfHomesThatMatchesThePriceSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
 		  
-		}
-        
+		}        
 @When("I search about home with {int} bed rooms")
 public void iSearchAboutHomeWithBedRooms(Integer int1) {
 	res = s.hasNumofbedrooms(houses, int1);
+	shouldRes.clear();
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 }
 
 @Then("A List of homes that matches the specification should be printed")
 public  void aListOfHomesThatMatchesTheSpecificationShouldBePrinted() { 
-	assertEquals(res,shouldRes);	
+	assertTrue(s.equalResults(res, shouldRes));
 }
 
 
 @When("I search about home with {int} bathrooms")
 public void iSearchAboutHomeWithBathrooms(Integer int1) {
 	res = s.hasNumofbathrooms(houses, int1);
+	shouldRes.clear(); 
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	
    }
-
 @When("I search about home that allows pets")
 public void iSearchAboutHomeThatAllowsPets() {
 	res = s.allowsPets(houses); 
 }
-
 @When("I search about home with {int} months of lease")
 public void iSearchAboutHomeWithMonthsOfLease(Integer int1) {
 	res = s.canRentFor(houses,int1);
+	shouldRes.clear();
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 }
 
-@When("I search about home that has an elevator")
-public void iSearchAboutHomeThatHasAnElevator() {
-   
+@When("I search about home that has an {string}")
+public void iSearchAboutHomeThatHasAn(String string) {
+    res = s.doesIthas(houses, string);
+    System.out.print(1);
+    s.printRes(res);
+    shouldRes.clear();
+    System.out.print(2);
+    shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
+    s.printRes(shouldRes);
 }}
+
+

@@ -10,8 +10,8 @@ Given  these homes are contained in the system
   When I search about home by ""HOUSE
   Then A list of homes that matches the  type specification should be returned and printed on the console
 
-  Scenario: Search about home with less than a specific price
-    When I search about home with price less than 400
+    Scenario: Search about home with less than a specific price
+    When I search about home with price less than 400 
     Then A List of homes that matches the specification should be printed
     Scenario: Search about home with specfic number of bed rooms
     When I search about home with 3 bed rooms
@@ -26,5 +26,5 @@ Given  these homes are contained in the system
     When I search about home with 6 months of lease 
     Then A List of homes that matches the specification should be printed
       Scenario: Search about home with with a specific amentie 
-    When I search about home that has an elevator
+    When I search about home that has an "fireplase"
     Then A List of homes that matches the specification should be printed

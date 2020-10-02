@@ -30,6 +30,26 @@ public class SearchforHouse {
 		if(e.getLeaseLength()==b) res.add(e) ;
 	}
 	return res;
+} 
+ public ArrayList<Home> doesIthas(ArrayList <Home> a,String b){
+	ArrayList <Home> res = new ArrayList<Home>();
+	boolean y = false ; 
+	for(Home e:a) {
+		y = false ;
+		for(String s:e.getAmenties()) {
+			if(s.equalsIgnoreCase(b)) { y=true;
+			break;}
+		}
+		if(y) res.add(e) ;
+	}
+	return res;
+}
+public boolean equalResults(ArrayList <Home> res,ArrayList <Home> shouldRes) {
+	if(res.size()!=shouldRes.size()) return false ; 
+	for(int i=0;i<res.size();i++) {
+		if(!(res.get(i).equals(shouldRes.get(i)))) return false ;
+	}
+	return true ; 
 }
 public  void printRes(ArrayList <Home> a) {
 	for(Home q:a) {

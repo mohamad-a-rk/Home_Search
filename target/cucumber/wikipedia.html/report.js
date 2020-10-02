@@ -90,8 +90,7 @@ formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected: java.util.ArrayList\u003c[Home [area\u003d150.0 ,price\u003d510 ,no_of_bedrooms\u003d3 ,lease_length\u003d6]]\u003e but was: java.util.ArrayList\u003c[Home [area\u003d150.0 ,price\u003d510 ,no_of_bedrooms\u003d3 ,lease_length\u003d6]]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted(SearchHomeSteps.java:60)\r\n\tat ✽.A List of homes that matches the specification should be printed(file:///C:/Users/hp/eclipse-workspace/fall2020Project2ndAssignment/use_cases/Search.feature:18)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
@@ -135,8 +134,7 @@ formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected: java.util.ArrayList\u003c[Home [area\u003d150.0 ,price\u003d510 ,no_of_bedrooms\u003d3 ,lease_length\u003d6], Home [area\u003d120.0 ,price\u003d230 ,no_of_bedrooms\u003d4 ,lease_length\u003d12]]\u003e but was: java.util.ArrayList\u003c[Home [area\u003d150.0 ,price\u003d510 ,no_of_bedrooms\u003d3 ,lease_length\u003d6], Home [area\u003d120.0 ,price\u003d230 ,no_of_bedrooms\u003d4 ,lease_length\u003d12]]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted(SearchHomeSteps.java:60)\r\n\tat ✽.A List of homes that matches the specification should be printed(file:///C:/Users/hp/eclipse-workspace/fall2020Project2ndAssignment/use_cases/Search.feature:21)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
@@ -224,8 +222,7 @@ formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected: java.util.ArrayList\u003c[Home [area\u003d150.0 ,price\u003d510 ,no_of_bedrooms\u003d3 ,lease_length\u003d6]]\u003e but was: java.util.ArrayList\u003c[Home [area\u003d150.0 ,price\u003d510 ,no_of_bedrooms\u003d3 ,lease_length\u003d6]]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted(SearchHomeSteps.java:60)\r\n\tat ✽.A List of homes that matches the specification should be printed(file:///C:/Users/hp/eclipse-workspace/fall2020Project2ndAssignment/use_cases/Search.feature:27)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
@@ -252,11 +249,11 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "I search about home that has an elevator",
+  "name": "I search about home that has an \"fireplase\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeThatHasAnElevator()"
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHomeThatHasAn(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -269,6 +266,7 @@ formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted(SearchHomeSteps.java:60)\r\n\tat ✽.A List of homes that matches the specification should be printed(file:///C:/Users/hp/eclipse-workspace/fall2020Project2ndAssignment/use_cases/Search.feature:30)\r\n",
+  "status": "failed"
 });
 });
