@@ -47,10 +47,7 @@ public class SearchHomeSteps {
 		 shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 			
 		}
-		@Then("A list of homes that matches the price specification should be returned and printed on the console")
-		public void aListOfHomesThatMatchesThePriceSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-		  
-		}
+	
         
 @When("I search about home with {int} bed rooms")
 public void iSearchAboutHomeWithBedRooms(Integer int1) {
@@ -78,20 +75,13 @@ public void iSearchAboutHomeWithPlacement (String string1) {
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 }
-@Then("A list of homes that matches the Placement specification should be returned and printed on the console")
-public void aListOfHomesThatMatchesTheplacementSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-	
-}
+
 //////Material 
 @When("I search about home by {String}")  
 public void iSearchAboutHomeWithMaterial (String string1) {
 	res=s.MaterialHome(houses, string1);
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
-}
-@Then("A list of homes that matches the Material specification should be returned and printed on the console")
-public void aListOfHomesThatMatchesThematerialSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-	
 }
 
 
@@ -102,10 +92,7 @@ public void iSearchAboutHomeWithPriceRange (Integer int1,Integer int2) {
 	res=s.RangePriceOfHome(houses, int1, int2);
 	
 }
-@Then("A list of homes that matches the Price_Month specification should be returned and printed on the console")
-public void aListOfHomesThatMatchesThePrice_MonthSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-	
-}
+
 /////area        
 @When(" I search about home with area {float}")  
 public void iSearchAboutHomeWithArea (Float float1) {
@@ -114,20 +101,14 @@ public void iSearchAboutHomeWithArea (Float float1) {
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	
 }
-@Then("A list of homes that matches the area specification should be returned and printed on the console")
-public void aListOfHomesThatMatchesTheAreaSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-	
-}
+
 
 ////area range  
 @When("I search about home with area range {int} to {int}")  
 public void iSearchAboutHomeWithAreaRange (Integer int1,Integer int2) {
 	
 }
-@Then("A list of homes that matches the Price_Month specification should be returned and printed on the console")
-public void aListOfHomesThatMatchesTheAreaRangeSpecificationShouldBeReturnedAndPrintedOnTheConsole() {
-	
-}
+
 @When("I search about home that allows pets")
 public void iSearchAboutHomeThatAllowsPets() {
 	res = s.allowsPets(houses); 

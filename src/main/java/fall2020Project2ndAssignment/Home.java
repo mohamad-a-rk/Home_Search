@@ -23,9 +23,13 @@ public String getPlace() {
 public boolean isPetsAllowed() {
 	return pets;
 }
+
 public int getPrice() {
+	
 	return price;
 }
+
+
 public float getArea() {
 	return area;
 }
