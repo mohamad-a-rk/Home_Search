@@ -49,3 +49,6 @@ Given  these homes are contained in the system
       Scenario: Search about home with with a specific amentie 
     When I search about home that has an "FIREPLACE"
     Then A List of homes that matches the specification should be printed
+    Scenario: Search about home with price less than a value and has specific count of bathrooms
+    When I search about house that it price less than 300 and has 2 bathrooms 
+    Then A List of homes that matches the specification should be printed
