@@ -532,4 +532,48 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.background({
+  "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "these homes are contained in the system",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Search about home with price less than a value and has specific count of bathrooms",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I search about house that it price less than 300 and has 2 bathrooms",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.iSearchAboutHouseThatItPriceLessThanAndHasBathrooms(java.lang.Integer,java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "A List of homes that matches the specification should be printed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
 });

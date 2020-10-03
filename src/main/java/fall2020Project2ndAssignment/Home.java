@@ -64,7 +64,7 @@ public Home(String details, String values) {
 @Override
 public String toString() {
 	String a ="";
-	a= a+"Home"+" ["+"area="+this.area+" ,price="+this.price+" ,no_of_bedrooms="+this.bedroomCount+" ,lease_length="+this.leaseLength+"]";
+	a= a+"Home"+" ["+"area="+this.area+" ,price="+this.price+" ,no_of_bedrooms="+this.bedroomCount+" ,lease_length="+this.leaseLength+" ,Type="+this.getType()+"]";
 	
 	return a;
 }
