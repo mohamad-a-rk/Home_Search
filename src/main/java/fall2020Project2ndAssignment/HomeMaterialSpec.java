@@ -5,7 +5,7 @@ public class HomeMaterialSpec implements GeneralSpec {
 	private String material;
 
 	public HomeMaterialSpec(String material) {
-		this.material = material;
+		this.material = material; 
 	}
 
 	public boolean isMatched(Home e) {
