@@ -10,6 +10,7 @@ import fall2020Project2ndAssignment.Home;
 import fall2020Project2ndAssignment.SearchforHouse;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ import io.cucumber.java.en.When;
 public class SearchHomeSteps {
 	List <List<String>> a ;
 	ArrayList <Home> houses = new ArrayList<Home>();
-	ArrayList <Home> res = new ArrayList<Home>();
+	List<Home> res = new ArrayList<Home>();
 	SearchforHouse s = new SearchforHouse();
 	ArrayList <Home> shouldRes = new ArrayList<Home>();
 	
@@ -49,7 +50,7 @@ public class SearchHomeSteps {
 		}
 		@When("I search about home with price less than {int}")
 		public void iSearchAboutHomeWithPriceLessThan(Integer int1) {
-		 res=s.RangePriceOfHome(houses,0, int1);
+		 res=(ArrayList<Home>) s.rangePriceOfHome(houses,0, int1);
 		 shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 		 System.out.println("When I searched for a house that price is less than 400");
 			
@@ -57,7 +58,7 @@ public class SearchHomeSteps {
 
 @When("I search about home with {int} bed rooms")
 public void iSearchAboutHomeWithBedRooms(Integer int1) {
-	res = s.hasNumofbedrooms(houses, int1);
+	res = (ArrayList<Home>) s.hasNumofbedrooms(houses, int1);
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	System.out.println("When I searched for a house that has 3 Bedrooms");
 }
@@ -66,12 +67,13 @@ public void iSearchAboutHomeWithBedRooms(Integer int1) {
 public  void aListOfHomesThatMatchesTheSpecificationShouldBePrinted() { 
 	s.printRes(res);
 	assertTrue(s.equalResults(res, shouldRes));
+	
 }
 
 
 @When("I search about home with {int} bathrooms")
 public void iSearchAboutHomeWithBathrooms(Integer int1) {
-	res = s.hasNumofbathrooms(houses, int1);
+	res = (ArrayList<Home>) s.hasNumofbathrooms(houses, int1);
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	System.out.println("When I searched for a house that has 2 bathrooms");
@@ -80,14 +82,14 @@ public void iSearchAboutHomeWithBathrooms(Integer int1) {
 
 @When("I search about home by place {string}")
 public void iSearchAboutHomeByPlace(String string) {
-	res=s.PlacementOfHome(houses, string);
+	res=s.placementOfHome(houses, string);
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	System.out.println("When I searched for a house that is in a village");
 }
 
 @When("I search about home by material {string}")
 public void iSearchAboutHomeByMaterial(String string) {
-	res=s.MaterialHome(houses, string);
+	res=(ArrayList<Home>) s.materialHome(houses, string);
 	System.out.println("When I searched for a house that it's material is wood");
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 }
@@ -97,14 +99,14 @@ public void iSearchAboutHomeByMaterial(String string) {
 /////////Price_Month Range   
 @When("I search about home with price range {int} to {int}")  
 public void iSearchAboutHomeWithPriceRange (Integer int1,Integer int2) {
-	res=s.RangePriceOfHome(houses, int1, int2);
+	res=s.rangePriceOfHome(houses, int1, int2);
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	System.out.println("When I searched for a house that price is between 500 and 700");
 	
 }
 @When("I search about home with area  {int}")
 public void iSearchAboutHomeWithArea(Integer int1) {
-	res=s.AreaOfHome(houses, 0,int1);
+	res=s.areaOfHome(houses, 0,int1);
 	System.out.println("When I searched for a house that area is less than 160");
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
@@ -113,7 +115,7 @@ public void iSearchAboutHomeWithArea(Integer int1) {
 ////area range  
 @When("I search about home with area range {int} to {int}")  
 public void iSearchAboutHomeWithAreaRange (Integer int1,Integer int2) {
-	res=s.AreaOfHome(houses, int1,int2);
+	res=s.areaOfHome(houses, int1,int2);
 	System.out.println("When I searched for a house that area is between 150 &200");
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 
@@ -150,7 +152,7 @@ public void iSearchAboutHomeByType(String string) {
 
 @When("I search about house that it price less than {int} and has {int} bathrooms")
 public void iSearchAboutHouseThatItPriceLessThanAndHasBathrooms(Integer int1, Integer int2) {
-    res=s.RangePriceOfHome(houses, 0, int1);
+    res=s.rangePriceOfHome(houses, 0, int1);
     res=s.hasNumofbathrooms(res, int2);
     System.out.println("When I searched for a house that price is less than 300 and has a 2 bathrooms");
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));

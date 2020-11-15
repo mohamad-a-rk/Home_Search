@@ -46,14 +46,14 @@ public String[] getAmenties() {
 	return amenties;
 } 
 public Home(String details, String values) {
-	String [] de = details.split("_");
-	String [] va = values.split("_");
+	String de[] = details.split("_");
+	String va[] = values.split("_");
 	this.type =de[0];
 	this.material =de[1];
 	this.place=de[2];
 	this.pets = de[3].equalsIgnoreCase("yes");
 	this.amenties = de[4].split(",");
-	int [] val  = new int [va.length];
+	int val [] = new int [va.length];
 	for(int i=0;i<val.length;i++) val[i]=Integer.parseInt(va[i]);
 	this.price= val[0];
 	this.area = val[1];
@@ -64,11 +64,11 @@ public Home(String details, String values) {
 @Override
 public String toString() {
 	String a ="";
-	a= a+"Home"+" ["+"area="+this.area+" ,price="+this.price+" ,no_of_bedrooms="+this.bedroomCount+" ,lease_length="+this.leaseLength+" ,Type="+this.getType()+"]";
+	a= a+"Home"+" ["+"area="+this.area+" ,price="+this.price+" ,no_of_bedrooms="+this.bedroomCount+" ,lease_length="+this.leaseLength+"]";
 	
 	return a;
 }
-public boolean areEquals(Home h) {
+public boolean equals(Home h) {
 	
 	return ((this.pets==h.isPetsAllowed())&&(this.area==h.getArea())&&(this.bathroomCount==h.getBathroomCount())&&
 			(this.bedroomCount==h.getBedroomCount())&&(this.leaseLength==h.getLeaseLength())&&

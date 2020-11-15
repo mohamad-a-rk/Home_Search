@@ -1,100 +1,77 @@
 package fall2020Project2ndAssignment;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class SearchforHouse {
- public ArrayList<Home> hasNumofbedrooms(ArrayList <Home> a,int b){
+ public List<Home> hasNumofbedrooms(List <Home> a,int count){
+	GeneralSpec spe = new BedroomsCountSpec(count);
+	 return getResult(a, spe);
+}
+private List<Home> getResult(List<Home> a, GeneralSpec spe) {
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) {
-		if(e.getBedroomCount()==b) res.add(e) ;
+		if(spe.isMatched(e)) res.add(e) ;
 	}
 	return res;
 }
- public ArrayList<Home> hasNumofbathrooms(ArrayList <Home> a,int b){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getBathroomCount()==b) res.add(e) ;
-	}
-	return res;
+ public List<Home> hasNumofbathrooms(List <Home> a,int count){
+	 GeneralSpec spe = new BathroomsCountSpec(count);
+	 return getResult(a, spe);
 }
- public ArrayList<Home> allowsPets(ArrayList <Home> a){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.isPetsAllowed()) res.add(e) ;
-	}
-	return res;
+ public List<Home> allowsPets(List <Home> a){
+	 GeneralSpec spe = new PetsAllowedCountSpec();
+	return getResult(a, spe);
 }
- public ArrayList<Home> canRentFor(ArrayList <Home> a,int b){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getLeaseLength()==b) res.add(e) ;
-	}
-	return res;
+ public List<Home> canRentFor(List <Home> a,int length){
+	 GeneralSpec spe = new LeaseLengthSpec(length);
+	return getResult(a, spe);
 } 
- public ArrayList<Home> doesIthas(ArrayList <Home> a,String b){
-	ArrayList <Home> res = new ArrayList<Home>();
-	boolean y = false ; 
-	for(Home e:a) {
-		y = false ;
-		for(String s:e.getAmenties()) {
-			if(s.equalsIgnoreCase(b)) { y=true;
-			break;}}
-		if(y) res.add(e) ;
-	}
-	return res;
+ public List<Home> doesIthas(List <Home> a,String amenties){
+	 GeneralSpec spe = new AmentiesSpec(amenties);
+	return getResult(a, spe);
 }
-public boolean equalResults(ArrayList <Home> res,ArrayList <Home> shouldRes) {
+public boolean equalResults(List <Home> res,List <Home> shouldRes) {
 	if(res.size()!=shouldRes.size()) return false ; 
 	for(int i=0;i<res.size();i++) {
-		if(!(res.get(i).equals(shouldRes.get(i)))) return false ;
+		if(!(res.get(i).areEquals(shouldRes.get(i)))) return false ;
 	}
 	return true ; 
 }
-public  void printRes(ArrayList <Home> a) {
+public  void printRes(List <Home> a) {
+	Logger logger = Logger.getLogger(SearchforHouse.class.getName());
 	for(Home q:a) {
-		System.out.println(a);
+		logger.log(Level.INFO,q.toString());
 	}
-	if(a.size()==0) System.out.println("Sorry but there is no results matches");
+	if(a.isEmpty()) logger.log(Level.INFO,"Sorry but there is no results matches");
 }
-public ArrayList<Home> PriceOfHome(ArrayList <Home> a,int x){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getPrice()==x) res.add(e) ;
-	}
-	return res;
+public List<Home> priceOfHome(List <Home> a,int price){
+	GeneralSpec spe = new PriceSpec(price);
+	return getResult(a, spe);
 }
-public ArrayList<Home> typeHome(ArrayList <Home> a,String c){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getType().equalsIgnoreCase(c)) res.add(e) ;
-	}
-	return res;
+public List<Home> typeHome(List <Home> a,String type){
+	GeneralSpec spe = new HomeTypeSpec(type);
+	return getResult(a, spe);
 }
-public ArrayList<Home> PlacementOfHome(ArrayList <Home> a,String c){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getPlace().equalsIgnoreCase(c)) res.add(e) ;
-	}
-	return res;
+public List<Home> placementOfHome(List <Home> a,String place){
+	GeneralSpec spe = new HomePlaceSpec(place);
+	return getResult(a, spe);
 }
-public ArrayList<Home> MaterialHome(ArrayList <Home> a,String c){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getMaterial().equalsIgnoreCase(c)) res.add(e) ;
-	}
-	return res;
+public List<Home> materialHome(List <Home> a,String material){
+	GeneralSpec spe = new HomeMaterialSpec(material);
+	return getResult(a, spe);
 }
-public ArrayList<Home> AreaOfHome(ArrayList <Home> a,float d,float c){
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) {
-		if(e.getArea()>=d&&e.getArea()<c) res.add(e) ;
-	}
-	return res;
+public List<Home> areaOfHome(List <Home> a,float area1,float area2){
+	GeneralSpec spe = new HomeAreaSpec(area1,area2);
+	return getResult(a, spe);
 }
-public ArrayList<Home> RangePriceOfHome(ArrayList <Home> a,int x,int y){
+public List<Home> rangePriceOfHome(List <Home> a,int price1,int price2){
+	GeneralSpec spe = new HomePriceRangeSpec(price1,price2);
 	ArrayList <Home> res = new ArrayList<Home>(); 
 	for(Home e:a) 
-		if(x<=e.getPrice()&&e.getPrice()<y) res.add(e);
+		if(spe.isMatched(e)) res.add(e);
 	
 	return res;
 }
