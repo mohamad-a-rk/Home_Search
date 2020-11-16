@@ -72,14 +72,14 @@ public List<Home> areaOfHome(List <Home> a,float area1,float area2){
 }
 public List<Home> rangePriceOfHome(List <Home> a,int price1,int price2){
 	GeneralSpec spe = new HomePriceRangeSpec(price1,price2);
-	ArrayList <Home> res = new ArrayList<Home>(); 
-	for(Home e:a) 
-		if(spe.isMatched(e)) res.add(e);
-	
-	return res;
+	List <Home> res ; 
+	res =  getResult(a, spe);
+	return res ;
 }
 public void setEmailSender(EmailSender emailsender) {
 	this.emailsender = emailsender;
 }
-
+public EmailSender getEmailSender() {
+	return this.emailsender;
+}
 }

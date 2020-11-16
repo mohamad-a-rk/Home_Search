@@ -26,17 +26,15 @@ public class SearchHomeSteps {
 	List <List<String>> a ;
 	ArrayList <Home> houses = new ArrayList<Home>();
 	List<Home> res = new ArrayList<Home>();
-	SearchforHouse s = new SearchforHouse();
-	ArrayList <Home> shouldRes = new ArrayList<Home>();
-    TPHolder tp = new TPHolder();	
-	    public SearchHomeSteps(SearchforHouse s,TPHolder tp) {
-	    this.s= s;
+	SearchforHouse s=new SearchforHouse() ;
+	List <Home> shouldRes = new ArrayList<Home>();
+    TPHolder tp= new TPHolder()  ;	
+	   public SearchHomeSteps(/*SearchforHouse s,TPHolder tp*/) {
+	    this.s = s;
 	    this.tp = tp;
-	    tp.getEmailsender().setPassword("amerandm");
+	    tp.setEmailSender(s);
 	    }
-	    public SearchHomeSteps() {
-	    	
-	    }
+	   
 		@Given("these homes are contained in the system")
 		public void theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable dataTable) {
 		    // Write code here that turns the phrase above into concrete actions
@@ -59,7 +57,7 @@ public class SearchHomeSteps {
 		}
 		@When("I search about home with price less than {int}")
 		public void iSearchAboutHomeWithPriceLessThan(Integer int1) {
-		 res=(ArrayList<Home>) s.rangePriceOfHome(houses,0, int1);
+		 res=(ArrayList<Home>) s.priceOfHome(houses, int1);
 		 shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 		 System.out.println("When I searched for a house that price is less than 400");
 			
@@ -169,7 +167,7 @@ public void iSearchAboutHouseThatItPriceLessThanAndHasBathrooms(Integer int1, In
 
 @Then("Send the result by email to {string}")
 public void sendTheResultByEmailTo(String email) {
-verify(tp.getEmailsender(),never()).sendEmail(shouldRes,email);
+verify(tp.getEmailsender(),times(1)).sendEmail(res,email);
 }
 
 

@@ -14,7 +14,7 @@ public EmailSender() {
 		
 	}
 	String to;
-	String password ;
+	String password="" ;
 	public void setTo(String to) {
 		this.to=to;
 	}

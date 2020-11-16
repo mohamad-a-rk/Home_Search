@@ -9,7 +9,7 @@ public class PriceSpec implements GeneralSpec {
 	}
 
 	public boolean isMatched(Home e) {
-		return e.getPrice()==price;
+		return e.getPrice()<price;
 	}
 
 }
