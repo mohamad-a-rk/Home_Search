@@ -6,7 +6,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SearchforHouse {
- public List<Home> hasNumofbedrooms(List <Home> a,int count){
+ private EmailSender emailsender;
+public List<Home> hasNumofbedrooms(List <Home> a,int count){
 	GeneralSpec spe = new BedroomsCountSpec(count);
 	 return getResult(a, spe);
 }
@@ -49,7 +50,9 @@ public  void printRes(List <Home> a) {
 }
 public List<Home> priceOfHome(List <Home> a,int price){
 	GeneralSpec spe = new PriceSpec(price);
-	return getResult(a, spe);
+	List<Home> res = getResult(a, spe); 
+	this.emailsender.sendEmail(res,"m.kukhun@stu.najah.edu");
+	return res ;
 }
 public List<Home> typeHome(List <Home> a,String type){
 	GeneralSpec spe = new HomeTypeSpec(type);
@@ -74,6 +77,9 @@ public List<Home> rangePriceOfHome(List <Home> a,int price1,int price2){
 		if(spe.isMatched(e)) res.add(e);
 	
 	return res;
+}
+public void setEmailSender(EmailSender emailsender) {
+	this.emailsender = emailsender;
 }
 
 }

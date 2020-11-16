@@ -1,7 +1,7 @@
 package fall2020Project2ndAssignTest;
 import java.util.List;
 import java.util.Map;
-
+import static org.mockito.Mockito.*;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -9,6 +9,7 @@ import org.junit.Ignore;
 import fall2020Project2ndAssignment.EmailSender;
 import fall2020Project2ndAssignment.Home;
 import fall2020Project2ndAssignment.SearchforHouse;
+import fall2020Project2ndAssignment.TPHolder;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -27,8 +28,15 @@ public class SearchHomeSteps {
 	List<Home> res = new ArrayList<Home>();
 	SearchforHouse s = new SearchforHouse();
 	ArrayList <Home> shouldRes = new ArrayList<Home>();
-    	
-	    
+    TPHolder tp = new TPHolder();	
+	    public SearchHomeSteps(SearchforHouse s,TPHolder tp) {
+	    this.s= s;
+	    this.tp = tp;
+	    tp.getEmailsender().setPassword("amerandm");
+	    }
+	    public SearchHomeSteps() {
+	    	
+	    }
 		@Given("these homes are contained in the system")
 		public void theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable dataTable) {
 		    // Write code here that turns the phrase above into concrete actions
@@ -78,8 +86,6 @@ public void iSearchAboutHomeWithBathrooms(Integer int1) {
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	System.out.println("When I searched for a house that has 2 bathrooms");
-	EmailSender es=new EmailSender();
-	es.sendEmail(shouldRes);
    }
 
 @When("I search about home by place {string}")
@@ -162,8 +168,8 @@ public void iSearchAboutHouseThatItPriceLessThanAndHasBathrooms(Integer int1, In
 }
 
 @Then("Send the result by email to {string}")
-public void sendTheResultByEmailTo(String string) {
-assertTrue(true);
+public void sendTheResultByEmailTo(String email) {
+verify(tp.getEmailsender(),never()).sendEmail(shouldRes,email);
 }
 
 

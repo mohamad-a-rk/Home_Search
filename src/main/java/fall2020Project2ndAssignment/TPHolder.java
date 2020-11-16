@@ -1,15 +1,16 @@
 package fall2020Project2ndAssignment;
-
 import java.util.List;
-
+import static org.mockito.Mockito.*;
 public class TPHolder {
-private EmailSender emailsender ;
-public void setEmailSender(EmailSender emailsender) {
-	 this.emailsender = emailsender ; 
+private EmailSender emailsender=mock(EmailSender.class) ;
+public EmailSender getEmailsender() {
+	return emailsender;
 }
-public void sendResult(String toEmail,String password,List <Home> homeRes) {
-	this.emailsender.setPassword(password);
-	this.emailsender.setTo(toEmail);;
-	this.emailsender.sendEmail(homeRes);
+public void setEmailsender(EmailSender emailsender) {
+	this.emailsender = emailsender;
 }
+public void setEmailSender(SearchforHouse sfh) {
+	 sfh.setEmailSender(this.emailsender);  
+}
+
 }

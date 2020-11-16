@@ -2,7 +2,6 @@ package fall2020Project2ndAssignment;
 import java.util.List;
 import java.util.Properties;
 import java.util.Scanner;
-
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
@@ -11,6 +10,9 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 public class EmailSender {
+public EmailSender() {
+		
+	}
 	String to;
 	String password ;
 	public void setTo(String to) {
@@ -19,16 +21,13 @@ public class EmailSender {
 	public void setPassword(String password) {
 		this.password=password;
 	}
-	public EmailSender() {
-		
-	}
 
-	 public void sendEmail(List <Home> res) {
+	 public void sendEmail(List <Home> res, String email) {
 	        // Recipient's email ID needs to be mentioned.
 	 
 	        // Sender's email ID needs to be mentioned
 	        String from = "mohamad.kukhun@gmail.com";
-
+            to=email;
 	        // Assuming you are sending email from through gmails smtp
 	        String host = "smtp.gmail.com";
 
