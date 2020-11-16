@@ -48,6 +48,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -88,6 +98,16 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -136,6 +156,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -176,6 +206,16 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -224,6 +264,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -264,6 +314,16 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -312,6 +372,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -352,6 +422,16 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -400,6 +480,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -440,6 +530,16 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -488,6 +588,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -532,6 +642,16 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.background({
   "name": "The System has a repository of homes with their specifications (type-material-placement-pets-amenties-price-area-bedrooms-bathrooms-leaselength)",
   "description": "",
@@ -572,6 +692,16 @@ formatter.step({
 });
 formatter.match({
   "location": "fall2020Project2ndAssignTest.SearchHomeSteps.aListOfHomesThatMatchesTheSpecificationShouldBePrinted()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Send the result by email to \"mohamad.kukhun@gmail.com\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "fall2020Project2ndAssignTest.SearchHomeSteps.sendTheResultByEmailTo(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

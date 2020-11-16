@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 
+import fall2020Project2ndAssignment.EmailSender;
 import fall2020Project2ndAssignment.Home;
 import fall2020Project2ndAssignment.SearchforHouse;
 
@@ -26,7 +27,7 @@ public class SearchHomeSteps {
 	List<Home> res = new ArrayList<Home>();
 	SearchforHouse s = new SearchforHouse();
 	ArrayList <Home> shouldRes = new ArrayList<Home>();
-	
+    	
 	    
 		@Given("these homes are contained in the system")
 		public void theseHomesAreContainedInTheSystem(io.cucumber.datatable.DataTable dataTable) {
@@ -77,7 +78,8 @@ public void iSearchAboutHomeWithBathrooms(Integer int1) {
 	shouldRes.add(new Home("HOUSE_WOOD_VILLAGE_NO_GARAGEPARKING,FIREPLACE,ELEVATOR","510_150_3_2_6"));
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	System.out.println("When I searched for a house that has 2 bathrooms");
-	
+	EmailSender es=new EmailSender();
+	es.sendEmail(shouldRes);
    }
 
 @When("I search about home by place {string}")
@@ -156,7 +158,12 @@ public void iSearchAboutHouseThatItPriceLessThanAndHasBathrooms(Integer int1, In
     res=s.hasNumofbathrooms(res, int2);
     System.out.println("When I searched for a house that price is less than 300 and has a 2 bathrooms");
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
+	
+}
 
+@Then("Send the result by email to {string}")
+public void sendTheResultByEmailTo(String string) {
+assertTrue(true);
 }
 
 
