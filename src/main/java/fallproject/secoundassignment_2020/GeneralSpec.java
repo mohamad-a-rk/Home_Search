@@ -1,4 +1,4 @@
-package fall2020Project2ndAssignment;
+package fallproject.secoundassignment_2020;
 
 public interface GeneralSpec {
  public boolean isMatched(Home e);

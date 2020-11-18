@@ -6,10 +6,10 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 
-import fall2020Project2ndAssignment.EmailSender;
-import fall2020Project2ndAssignment.Home;
-import fall2020Project2ndAssignment.SearchforHouse;
-import fall2020Project2ndAssignment.TPHolder;
+import fallproject.secoundassignment_2020.EmailSender;
+import fallproject.secoundassignment_2020.Home;
+import fallproject.secoundassignment_2020.SearchforHouse;
+import fallproject.secoundassignment_2020.TPHolder;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -32,7 +32,7 @@ public class SearchHomeSteps {
 	   public SearchHomeSteps(/*SearchforHouse s,TPHolder tp*/) {
 	    this.s = s;
 	    this.tp = tp;
-	    tp.setEmailSender(s);
+	    tp.setEmailsender(s);
 	    }
 	   
 		@Given("these homes are contained in the system")

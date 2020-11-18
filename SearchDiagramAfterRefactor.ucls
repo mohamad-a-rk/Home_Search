@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <class id="1" language="java" name="fallproject.secoundassignment_2020.HomePriceRangeSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/HomePriceRangeSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="166" x="1323" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fallproject.secoundassignment_2020.SearchforHouse" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/SearchforHouse.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="369" width="268" x="764" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="fallproject.secoundassignment_2020.Home" project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/Home.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="477" width="150" x="574" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="fallproject.secoundassignment_2020.PetsAllowedCountSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/PetsAllowedCountSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="157" x="1529" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fallproject.secoundassignment_2020.HomeMaterialSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/HomeMaterialSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="1726" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="fallproject.secoundassignment_2020.LeaseLengthSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/LeaseLengthSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="1917" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="fallproject.secoundassignment_2020.GeneralSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/GeneralSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="151" x="2299" y="485"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="fallproject.secoundassignment_2020.BathroomsCountSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/BathroomsCountSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="2108" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="fallproject.secoundassignment_2020.EmailSender" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/EmailSender.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="192" x="918" y="485"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="fallproject.secoundassignment_2020.HomeTypeSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/HomeTypeSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="2299" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="fallproject.secoundassignment_2020.HomePlaceSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/HomePlaceSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="2490" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="fallproject.secoundassignment_2020.TPHolder" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/TPHolder.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="211" x="1072" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="fallproject.secoundassignment_2020.AmentiesSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/AmentiesSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="2681" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="fallproject.secoundassignment_2020.BedroomsCountSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/BedroomsCountSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="2872" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="fallproject.secoundassignment_2020.HomeAreaSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/HomeAreaSpec.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="155" x="3063" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="fallproject.secoundassignment_2020.PriceSpec" 
+    project="fall2020Project2ndAssignment" 
+    file="/fall2020Project2ndAssignment/src/main/java/fallproject/secoundassignment_2020/PriceSpec.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="151" x="3258" y="-32"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="17">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="19">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="20" name="emailsender">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="22">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="23" name="emailsender">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="24" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="25">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="26">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="27">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="28">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="29">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="30">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="31">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="32">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="33">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

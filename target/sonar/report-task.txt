@@ -1,0 +1,6 @@
+projectKey=fall2020:fall2020Project2ndAssignment
+serverUrl=http://localhost:9000
+serverVersion=8.5.1.38104
+dashboardUrl=http://localhost:9000/dashboard?id=fall2020%3Afall2020Project2ndAssignment
+ceTaskId=AXXbDtRgRuLxLNlAtjGD
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXXbDtRgRuLxLNlAtjGD

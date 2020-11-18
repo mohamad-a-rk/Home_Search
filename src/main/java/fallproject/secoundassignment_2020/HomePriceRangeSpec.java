@@ -1,4 +1,4 @@
-package fall2020Project2ndAssignment;
+package fallproject.secoundassignment_2020;
 
 public class HomePriceRangeSpec implements GeneralSpec {
 

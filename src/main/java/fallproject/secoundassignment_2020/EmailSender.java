@@ -1,7 +1,6 @@
-package fall2020Project2ndAssignment;
+package fallproject.secoundassignment_2020;
 import java.util.List;
 import java.util.Properties;
-import java.util.Scanner;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
@@ -11,7 +10,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 public class EmailSender {
 public EmailSender() {
-		
+		//there is nothing to initalize 
 	}
 	String to;
 	String password="" ;
@@ -41,10 +40,9 @@ public EmailSender() {
 	        properties.put("mail.smtp.auth", "true");
 
 	        // Get the Session object.// and pass username and password
-	        //c.readLine();
-	        
+        
 	        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
-
+                 @Override
 	            protected PasswordAuthentication getPasswordAuthentication() {
 
 	                return new PasswordAuthentication("mohamad.kukhun@gmail.com",password);
@@ -55,8 +53,8 @@ public EmailSender() {
 
 	        // Used to debug SMTP issues
 	        session.setDebug(true);
-	        String result="";
-             for(Home h:res) result= result+h+"\n";
+	        StringBuilder result =new StringBuilder();
+             for(Home h:res) result.append(h+"\n");
 	        try {
 	            // Create a default MimeMessage object.
 	            MimeMessage message = new MimeMessage(session);
@@ -71,14 +69,11 @@ public EmailSender() {
 	            message.setSubject("Your search result!");
 
 	            // Now set the actual message
-	            message.setText(result);
-
-	            System.out.println("sending...");
+	            message.setText(result.toString());
 	            // Send message
 	            Transport.send(message);
-	            System.out.println("Sent message successfully....");
 	        } catch (MessagingException mex) {
-	            mex.printStackTrace();
+	        	//catch and declare
 	        }
 
 	    }

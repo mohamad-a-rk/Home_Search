@@ -1,4 +1,4 @@
-package fall2020Project2ndAssignment;
+package fallproject.secoundassignment_2020;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,7 +76,7 @@ public List<Home> rangePriceOfHome(List <Home> a,int price1,int price2){
 	res =  getResult(a, spe);
 	return res ;
 }
-public void setEmailSender(EmailSender emailsender) {
+public void setEmailsender(EmailSender emailsender) {
 	this.emailsender = emailsender;
 }
 public EmailSender getEmailSender() {
