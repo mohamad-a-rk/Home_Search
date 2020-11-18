@@ -6,8 +6,10 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 
+import fallproject.secoundassignment_2020.BathroomsCountSpec;
 import fallproject.secoundassignment_2020.EmailSender;
 import fallproject.secoundassignment_2020.Home;
+import fallproject.secoundassignment_2020.PriceSpec;
 import fallproject.secoundassignment_2020.SearchforHouse;
 import fallproject.secoundassignment_2020.TPHolder;
 
@@ -158,8 +160,7 @@ public void iSearchAboutHomeByType(String string) {
 
 @When("I search about house that it price less than {int} and has {int} bathrooms")
 public void iSearchAboutHouseThatItPriceLessThanAndHasBathrooms(Integer int1, Integer int2) {
-    res=s.rangePriceOfHome(houses, 0, int1);
-    res=s.hasNumofbathrooms(res, int2);
+    res = s.getCompoundRes(houses,new PriceSpec(int1),new BathroomsCountSpec(int2) ) ;
     System.out.println("When I searched for a house that price is less than 300 and has a 2 bathrooms");
 	shouldRes.add(new Home("APARTMENT_BRICK_CITY_NO_ELEVATOR","230_120_4_2_12"));
 	

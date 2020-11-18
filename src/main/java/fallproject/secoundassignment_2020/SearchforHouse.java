@@ -76,6 +76,12 @@ public List<Home> rangePriceOfHome(List <Home> a,int price1,int price2){
 	res =  getResult(a, spe);
 	return res ;
 }
+public List<Home> getCompoundRes(List <Home> a,GeneralSpec...speces){
+	GeneralSpec spe = new CompoundSpec(speces);
+	List <Home> res ; 
+	res =  getResult(a, spe);
+	return res ;
+}
 public void setEmailsender(EmailSender emailsender) {
 	this.emailsender = emailsender;
 }
